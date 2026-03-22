@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Overview — Soft UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div class="app">
+ 
+    <aside class="sidebar">
+      <!-- Brand -->
+      <div class="sidebar__brand">
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <rect x="1" y="1" width="8" height="8" rx="2" fill="#7A84D3"/>
+            <rect x="13" y="1" width="8" height="8" rx="2" fill="#7A84D3" opacity=".55"/>
+            <rect x="1" y="13" width="8" height="8" rx="2" fill="#7A84D3" opacity=".55"/>
+            <rect x="13" y="13" width="8" height="8" rx="2" fill="#7A84D3" opacity=".3"/>
+          </svg>
+        </div>
+        <span class="brand-name">Workify</span>
+      </div>
+ 
+      <!-- Nav -->
+      <nav class="sidebar__nav">
+ 
+        <a href="#" class="nav-item" data-label="Dashboard">
+          <span class="nav-icon">
+            <!-- dashboard 2x2 grid -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="1" y="1" width="7.5" height="7.5" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <rect x="11.5" y="1" width="7.5" height="7.5" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <rect x="1" y="11.5" width="7.5" height="7.5" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <rect x="11.5" y="11.5" width="7.5" height="7.5" rx="2" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <span class="nav-label">Dashboard</span>
+        </a>
+ 
+        <a href="#" class="nav-item nav-item--active" data-label="Projects">
+          <span class="nav-icon">
+            <!-- folder -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M1.5 5.5A2 2 0 013.5 3.5H7l2 2.5h7.5A2 2 0 0118.5 8v8a2 2 0 01-2 2H3.5a2 2 0 01-2-2V5.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="nav-label">Projects</span>
+        </a>
+ 
+        <a href="#" class="nav-item" data-label="Tasks">
+          <span class="nav-icon">
+            <!-- checklist -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="2.5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M6 7l1.5 1.5L10 6M6 11l1.5 1.5L10 10M6 15h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="nav-label">Tasks</span>
+        </a>
+ 
+        <a href="#" class="nav-item" data-label="Calendar">
+          <span class="nav-icon">
+            <!-- calendar -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="1.5" y="3.5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M1.5 8.5h17M6.5 1.5v4M13.5 1.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="nav-label">Calendar</span>
+        </a>
+ 
+        <a href="#" class="nav-item" data-label="Teams">
+          <span class="nav-icon">
+            <!-- group -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="14" cy="7" r="2.2" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M1 16.5c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M14 12c2 .3 4 1.8 4 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="nav-label">Teams</span>
+        </a>
+ 
+        <div class="nav-spacer"></div>
+ 
+        <a href="#" class="nav-item" data-label="Settings">
+          <span class="nav-icon">
+            <!-- gear -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M3.7 3.7l1.4 1.4M14.9 14.9l1.4 1.4M3.7 16.3l1.4-1.4M14.9 5.1l1.4-1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="nav-label">Settings</span>
+        </a>
+ 
+        <a href="#" class="nav-item" data-label="Logout">
+          <span class="nav-icon">
+            <!-- door with exit arrow -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M8 3H4a1.5 1.5 0 00-1.5 1.5v11A1.5 1.5 0 004 17h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M13 6.5L17.5 10 13 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.5 10h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="nav-label">Logout</span>
+        </a>
+ 
+      </nav>
+    </aside><!-- /sidebar -->
+ 
+ 
+    <main class="content">
+ 
+      <!-- Top Header Row -->
+      <header class="topbar">
+ 
+        <!-- Search -->
+        <div class="search-bar">
+          <input type="text" class="search-input" placeholder="Search projects, tasks..." />
+          <span class="search-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="8.5" cy="8.5" r="5.5" stroke="#4D4D4D" stroke-width="1.6"/>
+              <path d="M13 13l4 4" stroke="#4D4D4D" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+ 
+        <!-- User Profile -->
+        <div class="user-card">
+          <div class="user-avatar">
+            <img src="https://i.pravatar.cc/96?img=12" alt="Alex Johnson" />
+          </div>
+          <div class="user-info">
+            <span class="user-name">Naveen Singh</span>
+            <span class="user-role">Project Manager</span>
+          </div>
+          <button class="icon-btn" aria-label="Notifications">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 2a6 6 0 016 6c0 3.2.8 5 2 6H2c1.2-1 2-2.8 2-6a6 6 0 016-6z" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 16a2 2 0 004 0" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn icon-btn--caret" aria-label="Menu">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6l4 4 4-4" stroke="#4D4D4D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+ 
+      </header>
+ 
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1 class="title-main">Project Overview</h1>
+        <p class="title-sub">Welcome back, Naveen!</p>
+      </div>
+ 
+      <!-- ── Cards Grid ── -->
+      <section class="cards-grid">
+ 
+        <!-- Card 1 — Mobile App Redesign -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Mobile App Redesign</h2>
+            <span class="card__tag">UI/UX</span>
+          </div>
+          <div class="card__progress-row">
+            <span class="progress-label">Progress</span>
+            <span class="progress-pct">75%</span>
+          </div>
+          <div class="card__bar-wrap" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="card__bar-fill" style="--fill:75%"></div>
+          </div>
+          <div class="card__footer">
+            <div class="avatar-group" aria-label="3 team members">
+              <img class="avatar" src="https://i.pravatar.cc/64?img=1" alt="member 1"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=2" alt="member 2"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=3" alt="member 3"/>
+              <span class="member-count">3 members</span>
+            </div>
+            <span class="due-date">Due: Oct 28</span>
+          </div>
+        </article>
+ 
+        <!-- Card 2 — Web Platform Development -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Web Platform Development</h2>
+            <span class="card__tag">Frontend</span>
+          </div>
+          <div class="card__progress-row">
+            <span class="progress-label">Progress</span>
+            <span class="progress-pct">40%</span>
+          </div>
+          <div class="card__bar-wrap" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+            <div class="card__bar-fill" style="--fill:40%"></div>
+          </div>
+          <div class="card__footer">
+            <div class="avatar-group" aria-label="5 team members">
+              <img class="avatar" src="https://i.pravatar.cc/64?img=5" alt="member 1"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=6" alt="member 2"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=7" alt="member 3"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=8" alt="member 4"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=9" alt="member 5"/>
+              <span class="member-count">5 members</span>
+            </div>
+            <span class="due-date">Due: Nov 15</span>
+          </div>
+        </article>
+ 
+        <!-- Card 3 — Brand Identity Refresh -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Brand Identity Refresh</h2>
+            <span class="card__tag">Design</span>
+          </div>
+          <div class="card__progress-row">
+            <span class="progress-label">Progress</span>
+            <span class="progress-pct">90%</span>
+          </div>
+          <div class="card__bar-wrap" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="card__bar-fill" style="--fill:90%"></div>
+          </div>
+          <div class="card__footer">
+            <div class="avatar-group" aria-label="2 team members">
+              <img class="avatar" src="https://i.pravatar.cc/64?img=11" alt="member 1"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=12" alt="member 2"/>
+              <span class="member-count">2 members</span>
+            </div>
+            <span class="due-date">Due: Oct 30</span>
+          </div>
+        </article>
+ 
+        <!-- Card 4 — Marketing Campaign -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Marketing Campaign</h2>
+            <span class="card__tag">Strategy</span>
+          </div>
+          <div class="card__progress-row">
+            <span class="progress-label">Progress</span>
+            <span class="progress-pct">60%</span>
+          </div>
+          <div class="card__bar-wrap" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            <div class="card__bar-fill" style="--fill:60%"></div>
+          </div>
+          <div class="card__footer">
+            <div class="avatar-group" aria-label="4 team members">
+              <img class="avatar" src="https://i.pravatar.cc/64?img=14" alt="member 1"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=15" alt="member 2"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=16" alt="member 3"/>
+              <img class="avatar" src="https://i.pravatar.cc/64?img=17" alt="member 4"/>
+              <span class="member-count">4 members</span>
+            </div>
+            <span class="due-date">Due: Dec 05</span>
+          </div>
+        </article>
+ 
+      </section><!-- /cards-grid -->
+ 
+    </main><!-- /content -->
+ 
+  </div><!-- /app -->
+ 
+</body>
+</html>
